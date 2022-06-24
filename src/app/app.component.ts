@@ -27,4 +27,10 @@ export class AppComponent {
   remove(id:number){
     this.todos = this.todos.filter((todo,number)=> number !== id);
   }
+  clearCompleted(): void {
+    this.todos = this.todos.filter((todo,Number) => todo.IsCompleted);
+  }
+  clearAll(): void {
+    this.todos = this.todos.filter((todo) => !this.done);
+  }
 }

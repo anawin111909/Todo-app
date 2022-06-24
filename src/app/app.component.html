@@ -10,8 +10,8 @@
                   id="buttun-addon2" style="color: white;"(click)="saveTodo()">Add</button>
       </div>
       <div style="text-align: right;">
-        <button type="button" class="btn btn-outline-warning">Clear Completed</button>
-        <button type="button" class="btn btn-outline-danger">Clear All</button>
+        <button type="button" class="btn btn-outline-warning"(click)="clearCompleted()">Clear Completed</button>
+        <button type="button" class="btn btn-outline-danger"(click)="clearAll()">Clear All</button>
       </div>
       <br>
       <table class="table table-striped">
